@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive  ;
+}
+nav{
+    position: fixed;
+    background: palevioletred;
+    width: 100%;
+    z-index: 1;
+   
+}
+nav .menu{
+    max-width: 1250px;
+    background: palevioletred;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    
+}
+.menu .logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 500;
+}
+.menu ul{
+    display: inline-flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 7px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500px;
+   
+    padding: 5px 5px;
+    border-radius: 5px;
+   
+}
+.menu ul li a:hover{
+    background: pink;
+    color: black;
+}
+.img{
+    background: url(asserts/valentine.jpg);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.center{
+    position: absolute;
+    top: 80%;
+    left: 51%;
+    transform: translate(-50%,-50%);
+   
+    padding: 0 20px;
+    text-align: center;
+}
+
+.center .btns{
+    margin-top: 20px;
+}
+.center .btns a{
+    text-decoration: none;
+    color:white;
+}
+.center .btns button
+{
+    height: 55px;
+    width: 140px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid palevioletred;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.center .btns button:first-child
+{
+    color: white;
+    background: none;
+}
+.center .btns button:first-child:hover
+{
+    background: palevioletred;
+    color: white;
+    
+}
+  
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: auto;
+    background-color: palevioletred;
+    padding: 60px 10%;
+}
+ul{
+    list-style: none;
+}
+.footer-col{
+    width: 25%;
+
+}
+.footer-col h4{
+    position: relative;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: black;
+    text-transform: capitalize;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -6px;
+    background-color:red;
+    height: 2px;
+    width: 40px;
+}
+ul li:not(:last-child){
+    margin-bottom: 8px;
+
+}
+ul li a{
+    display: block;
+    font-size: 19px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+ul li a:hover{
+    color: white;
+    padding-left: 2px;
+}
+.link a{
+    display: inline-block;
+    height:44px ;
+    width:44px ;
+    color: white;
+    background-color: rgba(43, 15, 146, 0.2);
+    margin: 0 8px 8px 0;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50px;
+    transition: 0.4s;
+
+}
+.link a:hover{
+    color: black;
+    background-color: white;
+}
+
+.products .boxcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+section{
+    width: 80%;
+    margin: 40px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: palevioletred;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.card{
+    width: 325px;
+    background-color: white;
+    border: solid;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px,2px,4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+
+}
+.card:hover{
+    background-color: palevioletred;
+    cursor: pointer;
+    transform: scale(1.03);
+    
+}
+.card-content{
+    padding: 8px;
+}
+.card-content h3{
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    font-size: 20px;
+    line-height: 1.3;
+}
+.card-content .btn{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    display: block;
+    text-align: center;
+    margin: 20px 100px;
+    text-decoration: none;
+}
+.card-content .btn:hover{
+    background-color: blue;
+    cursor: pointer;
+    transform: scale(1.03);
+}
